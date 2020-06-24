@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Millionaire</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logos/Logotype_main_min.gif">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+
+  <script type="text/javascript">
+    var map;
+    DG.then(function () {
+      if (document.getElementById('map')) {
+        map = DG.map('map', {
+          center: [51.090590, 71.426081],
+          zoom: 13
+        });
+
+        DG.marker([51.090590, 71.426081]).addTo(map).bindPopup('Вы кликнули по мне!');
+      }
+      });
+
+      new WOW().init();
+
+  </script>
+
+<link rel="stylesheet" href="styles.0245278653a5764f5cdd.css"></head>
+
+<body>
+  <app-root></app-root>
+<script src="runtime-es2015.858f8dd898b75fe86926.js" type="module"></script><script src="polyfills-es2015.27661dfa98f6332c27dc.js" type="module"></script><script src="runtime-es5.741402d1d47331ce975c.js" nomodule></script><script src="polyfills-es5.7f43b971448d2fb49202.js" nomodule></script><script src="scripts.b7c7b02602b1d8638842.js"></script><script src="main-es2015.dd20898e57f94312f070.js" type="module"></script><script src="main-es5.5bc60f57194a07d117a0.js" nomodule></script></body>
+
+</html>
